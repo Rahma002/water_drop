@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Drop Water</title>
+    <style>
+      body {
+        background: #e0e0e0;
+      }
+
+      .container {
+        position: absolute;
+        justify-content: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .water-drop {
+        width: 200px;
+        height: 200px;
+        border-radius: 54% 40% 28% 63% / 51% 35% 55% 50%;
+        background: transparent;
+        box-shadow: inset 6px 32px 23px 0 #c9c9c9, inset 20px 80px 15px 0 #e0e0e0, 10px 20px 20px 0 #c9c9c9;
+      }
+
+      .water-drop::before {
+        content: "";
+        width: 60px;
+        height: 20px;
+        background: white;
+        position: absolute;
+        left: 25px;
+        top: 35px;
+        transform: rotate(-40deg);
+        border-radius: 35% 50% 45% 45%;
+      }
+
+      .water-drop::after {
+        content: "";
+        width: 15px;
+        height: 15px;
+        background: white;
+        position: absolute;
+        top: 83px;
+        left: 33px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="water-drop"></div>
+    </div>
+  </body>
+</html>
